@@ -5,7 +5,7 @@ import { EventEmitter } from 'node:events';
 import { Manager } from './lib/manager';
 import { MQTTServer } from './lib/server/mqtt';
 
-class Shelly extends utils.Adapter {
+class ShellyNG extends utils.Adapter {
     private isUnloaded: boolean;
     private serverMqtt: null | MQTTServer;
     private firmwareUpdateTimeout: ioBroker.Timeout | undefined;
@@ -16,7 +16,7 @@ class Shelly extends utils.Adapter {
     public constructor(options: Partial<utils.AdapterOptions> = {}) {
         super({
             ...options,
-            name: 'shelly',
+            name: 'shelly-ng',
         });
 
         this.isUnloaded = false;
@@ -282,8 +282,8 @@ class Shelly extends utils.Adapter {
 
 if (require.main !== module) {
     // Export the constructor in compact mode
-    module.exports = (options: Partial<utils.AdapterOptions> | undefined) => new Shelly(options);
+    module.exports = (options: Partial<utils.AdapterOptions> | undefined) => new ShellyNG(options);
 } else {
     // otherwise start the instance directly
-    (() => new Shelly())();
+    (() => new ShellyNG())();
 }

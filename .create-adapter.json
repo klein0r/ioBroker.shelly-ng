@@ -1,8 +1,8 @@
 {
     "cli": true,
     "target": "directory",
-    "adapterName": "shelly",
-    "title": "Shelly",
+    "adapterName": "shelly-ng",
+    "title": "Shelly-NG (Gen2+)",
     "description": "Integrate your Shelly next gen (Gen2+) devices into ioBroker via MQTT",
     "keywords": ["Shelly", "IoT", "MQTT"],
     "expert": "yes",
