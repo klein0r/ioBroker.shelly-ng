@@ -1,6 +1,6 @@
 ![Logo](../../../admin/shelly.png)
 
-# ioBroker.shelly DEV documentation
+# ioBroker.shelly-ng DEV documentation
 
 ## Device definitions
 

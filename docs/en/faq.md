@@ -1,6 +1,6 @@
-![Logo](../../admin/shelly.png)
+![Logo](../../admin/shelly-ng.png)
 
-# ioBroker.shelly
+# ioBroker.shelly-ng
 
 This is the English documentation - [🇩🇪 German version](../de/faq.md)
 

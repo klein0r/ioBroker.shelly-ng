@@ -50,29 +50,12 @@
                                 "zh-cn": "MQTT (和 HTTP)"
                             },
                             "value": "mqtt"
-                        },
-                        {
-                            "label": {
-                                "en": "CoAP (and HTTP)",
-                                "de": "CoAP (und HTTP)",
-                                "ru": "CoAP (и HTTP)",
-                                "pt": "CoAP (e HTTP)",
-                                "nl": "CoAP (en HTTP)",
-                                "fr": "CoAP (et HTTP)",
-                                "it": "CoAP (e HTTP)",
-                                "es": "CoAP (y HTTP)",
-                                "pl": "CoAP (i HTTP)",
-                                "uk": "CoAP (і HTTP)",
-                                "zh-cn": "CoAP (和 HTTP)"
-                            },
-                            "value": "coap"
                         }
                     ],
                     "sm": 12,
                     "md": 8,
                     "lg": 8,
-                    "label": "Shelly protocol",
-                    "help": "CoAP ist supported by Gen1 devices, MQTT is supported by all devices (Gen1 and Gen2)"
+                    "label": "Shelly protocol"
                 },
                 "_headerAuthentication": {
                     "newLine": true,
@@ -327,53 +310,6 @@
                     "md": 4,
                     "lg": 4,
                     "label": "Default QoS"
-                }
-            }
-        },
-        "_coap": {
-            "hidden": "data.protocol !== 'coap'",
-            "type": "panel",
-            "label": "CoAP settings",
-            "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNNTQuMiAyMDIuOUMxMjMuMiAxMzYuNyAyMTYuOCA5NiAzMjAgOTZzMTk2LjggNDAuNyAyNjUuOCAxMDYuOWMxMi44IDEyLjIgMzMgMTEuOCA0NS4yLS45czExLjgtMzMtLjktNDUuMkM1NDkuNyA3OS41IDQ0MC40IDMyIDMyMCAzMlM5MC4zIDc5LjUgOS44IDE1Ni43Qy0yLjkgMTY5LTMuMyAxODkuMiA4LjkgMjAyczMyLjUgMTMuMiA0NS4yIC45ek0zMjAgMjU2YzU2LjggMCAxMDguNiAyMS4xIDE0OC4yIDU2YzEzLjMgMTEuNyAzMy41IDEwLjQgNDUuMi0yLjhzMTAuNC0zMy41LTIuOC00NS4yQzQ1OS44IDIxOS4yIDM5MyAxOTIgMzIwIDE5MnMtMTM5LjggMjcuMi0xOTAuNSA3MmMtMTMuMyAxMS43LTE0LjUgMzEuOS0yLjggNDUuMnMzMS45IDE0LjUgNDUuMiAyLjhjMzkuNS0zNC45IDkxLjMtNTYgMTQ4LjItNTZ6bTY0IDE2MGE2NCA2NCAwIDEgMCAtMTI4IDAgNjQgNjQgMCAxIDAgMTI4IDB6Ii8+PC9zdmc+",
-            "items": {
-                "coapbind": {
-                    "newLine": true,
-                    "type": "ip",
-                    "listenOnAllPorts": true,
-                    "sm": 12,
-                    "md": 4,
-                    "lg": 4,
-                    "label": "COAP listen IP"
-                },
-                "blacklist": {
-                    "type": "table",
-                    "sm": 12,
-                    "md": 12,
-                    "lg": 12,
-                    "label": "Blacklist",
-                    "items": [
-                        {
-                            "type": "text",
-                            "attr": "id",
-                            "width": "100%",
-                            "title": {
-                                "en": "Device ID or IP address",
-                                "de": "Geräte-ID oder IP-Adresse",
-                                "ru": "ID устройства или IP адрес",
-                                "pt": "ID do dispositivo ou endereço IP",
-                                "nl": "ID of IP adres",
-                                "fr": "ID ou adresse IP",
-                                "it": "ID dispositivo o indirizzo IP",
-                                "es": "ID de dispositivo o dirección IP",
-                                "pl": "Device ID lub adres IP",
-                                "uk": "IP-адреса",
-                                "zh-cn": "Device ID或IP地址"
-                            },
-                            "filter": true,
-                            "sort": true,
-                            "default": ""
-                        }
-                    ]
                 }
             }
         }

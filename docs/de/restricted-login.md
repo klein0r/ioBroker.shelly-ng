@@ -1,6 +1,6 @@
-![Logo](../../admin/shelly.png)
+![Logo](../../admin/shelly-ng.png)
 
-# ioBroker.shelly
+# ioBroker.shelly-ng
 This is the German documentation - [🇺🇸 English version](../en/restricted-login.md)
 
 ## Geschützter Login

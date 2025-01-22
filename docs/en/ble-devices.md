@@ -1,6 +1,6 @@
-![Logo](../../admin/shelly.png)
+![Logo](../../admin/shelly-ng.png)
 
-# ioBroker.shelly
+# ioBroker.shelly-ng
 
 **This feature is experimental!**
 
