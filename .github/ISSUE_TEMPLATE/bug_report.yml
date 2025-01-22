@@ -12,7 +12,7 @@ body:
         **Thank you for wanting to report a bug in this adapter!**
 
         If this is the first time you are doing this, please take a few moments to read
-        through the [README](https://github.com/iobroker-community-adapters/ioBroker.shelly/blob/master/README.md).
+        through the [README](https://github.com/klein0r/ioBroker.shelly-ng/blob/main/README.md).
 
         You are about to report a bug in **Shelly Adapter**. Do not proceed if your issue
         occurs with ioBroker core, any other adapters, unofficial or outdated
@@ -46,17 +46,6 @@ body:
       description: Which version is installed on the device?
     validations:
       required: false
-  - type: dropdown
-    id: protocol
-    attributes:
-      label: Protocol
-      description: Which protocol was configured when this issue occurs
-      options:
-        - MQTT
-        - CoAP / CoIoT
-      default: 0
-    validations:
-      required: true
   # general questions
   - type: textarea
     attributes:

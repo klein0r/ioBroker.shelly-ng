@@ -1,22 +1,12 @@
 {
   "name": "iobroker.shelly",
-  "version": "7.0.0",
-  "description": "Integrate your Shelly devices into ioBroker via MQTT or CoAP",
+  "version": "0.0.1",
+  "description": "Integrate your Shelly next gen (Gen2+) devices into ioBroker via MQTT",
   "author": {
     "name": "Matthias Kleine",
     "email": "info@haus-automatisierung.com"
   },
-  "contributors": [
-    {
-      "name": "Apollon77",
-      "email": "iobroker@fischer-ka.de"
-    },
-    {
-      "name": "Christian Scholz",
-      "email": "chs@ip4.de"
-    }
-  ],
-  "homepage": "https://github.com/iobroker-community-adapters/ioBroker.shelly",
+  "homepage": "https://github.com/klein0r/ioBroker.shelly-ng",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -24,16 +14,14 @@
     "home automation",
     "Shelly",
     "IoT",
-    "CoAP",
-    "CoIoT",
     "MQTT"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iobroker-community-adapters/ioBroker.shelly.git"
+    "url": "git+https://github.com/klein0r/ioBroker.shelly-ng.git"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.1.6",
@@ -104,7 +92,7 @@
     "release-major": "release-script major --yes"
   },
   "bugs": {
-    "url": "https://github.com/iobroker-community-adapters/ioBroker.shelly/issues"
+    "url": "https://github.com/klein0r/ioBroker.shelly-ng/issues"
   },
   "readmeFilename": "README.md"
 }

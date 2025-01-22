@@ -10,7 +10,7 @@
             "items": {
                 "_documentationLink": {
                     "type": "staticLink",
-                    "href": "https://github.com/iobroker-community-adapters/ioBroker.shelly/tree/master/docs/en",
+                    "href": "https://github.com/klein0r/ioBroker.shelly-ng/tree/main/docs/en",
                     "label": {
                         "en": "Please read the documentation carefully before using this adapter",
                         "de": "Bitte lies vor der Verwendung dieses Adapters die Dokumentation",
@@ -104,7 +104,7 @@
                 },
                 "_documentationLinkRestrictedLogin": {
                     "type": "staticLink",
-                    "href": "https://github.com/iobroker-community-adapters/ioBroker.shelly/blob/master/docs/en/restricted-login.md",
+                    "href": "https://github.com/klein0r/ioBroker.shelly-ng/blob/main/docs/en/restricted-login.md",
                     "label": {
                         "en": "How to protect your devices",
                         "de": "Wie Sie Ihre Geräte absichern",
@@ -240,7 +240,7 @@
                 },
                 "_documentationLinkRestrictedLogin": {
                     "type": "staticLink",
-                    "href": "https://github.com/iobroker-community-adapters/ioBroker.shelly/blob/master/docs/en/protocol-mqtt.md",
+                    "href": "https://github.com/klein0r/ioBroker.shelly-ng/blob/main/docs/en/protocol-mqtt.md",
                     "label": {
                         "en": "How to configure MQTT",
                         "de": "So konfigurieren Sie MQTT",
