@@ -1,5 +1,5 @@
-import * as utils from '@iobroker/adapter-core';
-import { Manager } from '../manager';
+import type * as utils from '@iobroker/adapter-core';
+import type { Manager } from '../manager';
 
 export abstract class BaseClient {
     protected adapter: utils.AdapterInstance;

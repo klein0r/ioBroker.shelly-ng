@@ -1,6 +1,6 @@
-import * as utils from '@iobroker/adapter-core';
-import { EventEmitter } from 'node:events';
-import { BaseDevice } from './device/base';
+import type * as utils from '@iobroker/adapter-core';
+import type { EventEmitter } from 'node:events';
+import type { BaseDevice } from './device/base';
 
 export class Manager {
     protected adapter: utils.AdapterInstance;

@@ -1,4 +1,4 @@
-import * as utils from '@iobroker/adapter-core';
+import type * as utils from '@iobroker/adapter-core';
 
 export abstract class BaseDevice {
     protected adapter: utils.AdapterInstance;
@@ -73,9 +73,9 @@ export abstract class BaseDevice {
                 read: true,
                 write: false,
                 states: {
-                    '1': 'Generation 1',
-                    '2': 'Generation 2',
-                    '3': 'Generation 3',
+                    1: 'Generation 1',
+                    2: 'Generation 2',
+                    3: 'Generation 3',
                 },
             },
             native: {},

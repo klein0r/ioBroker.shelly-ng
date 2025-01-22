@@ -48,7 +48,9 @@ class Shelly extends utils.Adapter {
             // Start MQTT server
             setImmediate(() => {
                 if (protocol === 'both' || protocol === 'mqtt') {
-                    this.log.info(`Starting in MQTT mode. Listening on ${this.config.bind}:${this.config.port} (QoS ${this.config.qos})`);
+                    this.log.info(
+                        `Starting in MQTT mode. Listening on ${this.config.bind}:${this.config.port} (QoS ${this.config.qos})`,
+                    );
 
                     if (!this.config.mqttusername || this.config.mqttusername.length === 0) {
                         this.log.error('MQTT Username is missing!');
@@ -81,13 +83,17 @@ class Shelly extends utils.Adapter {
             if (stateId === 'info.update') {
                 this.log.debug(`[onStateChange] "info.update" state changed - starting update on every device`);
 
-                this.eventEmitter!.emit('onFirmwareUpdate');
+                this.eventEmitter.emit('onFirmwareUpdate');
             } else if (stateId === 'info.downloadScripts') {
-                this.log.debug(`[onStateChange] "info.downloadScripts" state changed - starting script download of every device`);
+                this.log.debug(
+                    `[onStateChange] "info.downloadScripts" state changed - starting script download of every device`,
+                );
 
-                this.eventEmitter!.emit('onScriptDownload');
+                this.eventEmitter.emit('onScriptDownload');
             } else if (!this.isUnloaded) {
-                this.log.debug(`[onStateChange] "${id}" state changed: ${JSON.stringify(state)} - forwarding to objectHelper`);
+                this.log.debug(
+                    `[onStateChange] "${id}" state changed: ${JSON.stringify(state)} - forwarding to objectHelper`,
+                );
 
                 //if (objectHelper) {
                 //    objectHelper.handleStateChange(id, state);
@@ -225,7 +231,7 @@ class Shelly extends utils.Adapter {
 
     async getAllDeviceIds(): Promise<string[]> {
         const devices = await this.getDevicesAsync();
-        return devices.map((device) => this.removeNamespace(device._id));
+        return devices.map(device => this.removeNamespace(device._id));
     }
 
     async setOnlineFalse(): Promise<void> {
@@ -250,11 +256,13 @@ class Shelly extends utils.Adapter {
     }
 
     autoFirmwareUpdate(): void {
-        if (this.isUnloaded) return;
+        if (this.isUnloaded) {
+            return;
+        }
         if (this.config.autoupdate) {
             this.log.debug(`[firmwareUpdate] Starting update on every device`);
 
-            this.eventEmitter!.emit('onFirmwareUpdate');
+            this.eventEmitter.emit('onFirmwareUpdate');
 
             this.firmwareUpdateTimeout = this.setTimeout(
                 () => {

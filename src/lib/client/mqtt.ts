@@ -1,8 +1,8 @@
-import * as utils from '@iobroker/adapter-core';
-import { Client as AedesClient } from 'aedes';
-import { BaseDevice } from '../device/base';
+import type * as utils from '@iobroker/adapter-core';
+import type { Client as AedesClient } from 'aedes';
+import type { BaseDevice } from '../device/base';
 import { NextgenDevice } from '../device/nextgen';
-import { Manager } from '../manager';
+import type { Manager } from '../manager';
 import { BaseClient } from './base';
 
 export namespace Rpc {
@@ -153,7 +153,7 @@ export class MQTTClient extends BaseClient {
 
     public onboarding(): void {
         this.publishRpcMsg({ method: 'Shelly.GetDeviceInfo' })
-            .then((result) => {
+            .then(result => {
                 this.adapter.log.debug(`Shelly device info: ${JSON.stringify(result)}`);
 
                 if (!this.device && result.gen >= 2) {
@@ -164,7 +164,7 @@ export class MQTTClient extends BaseClient {
                     });
                 }
             })
-            .catch((reason) => {
+            .catch(reason => {
                 if (typeof reason === 'string' && reason.startsWith('[RPC_COMMAND_TIMEOUT')) {
                     // Gen 1
                 }
@@ -248,16 +248,23 @@ export class MQTTClient extends BaseClient {
             const qos = this.adapter.config.qos ?? 0;
 
             try {
-                this.adapter.log.debug(`[MQTT] Send state to ${this.client.id} with QoS ${qos}: ${topic} = ${payload} (${msgId})`);
-                this.client.publish({ cmd: 'publish', topic, payload, qos: 0, messageId: msgId, dup: false, retain: false }, (err) => {
-                    if (err) {
-                        reject(err);
-                    } else {
-                        resolve(msgId);
-                    }
-                });
+                this.adapter.log.debug(
+                    `[MQTT] Send state to ${this.client.id} with QoS ${qos}: ${topic} = ${payload} (${msgId})`,
+                );
+                this.client.publish(
+                    { cmd: 'publish', topic, payload, qos: 0, messageId: msgId, dup: false, retain: false },
+                    err => {
+                        if (err) {
+                            reject(err);
+                        } else {
+                            resolve(msgId);
+                        }
+                    },
+                );
             } catch (err) {
-                this.adapter.log.error(`[MQTT] Unable to publish message to ${this.client.id} - received error "${err}": ${topic} = ${payload}`);
+                this.adapter.log.error(
+                    `[MQTT] Unable to publish message to ${this.client.id} - received error "${err}": ${topic} = ${payload}`,
+                );
                 reject(err);
             }
         });

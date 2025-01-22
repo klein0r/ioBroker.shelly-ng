@@ -1,5 +1,5 @@
-import * as utils from '@iobroker/adapter-core';
-import { MQTTClient } from '../client/mqtt';
+import type * as utils from '@iobroker/adapter-core';
+import type { MQTTClient } from '../client/mqtt';
 import { BaseDevice } from './base';
 
 export class NextgenDevice extends BaseDevice {
@@ -25,7 +25,10 @@ export class NextgenDevice extends BaseDevice {
         this.adapter.log.error(JSON.stringify(getConfigResult));
         */
 
-        const getComponentsResult = await this.mqttClient.publishRpcMsg({ method: 'Shelly.GetComponents', params: { include: ['config', 'status'] } });
+        const getComponentsResult = await this.mqttClient.publishRpcMsg({
+            method: 'Shelly.GetComponents',
+            params: { include: ['config', 'status'] },
+        });
         this.adapter.log.error(JSON.stringify(getComponentsResult));
 
         /*
