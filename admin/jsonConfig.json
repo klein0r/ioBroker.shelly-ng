@@ -1,0 +1,381 @@
+{
+    "i18n": true,
+    "type": "tabs",
+    "iconPosition": "top",
+    "items": {
+        "_general": {
+            "type": "panel",
+            "label": "General settings",
+            "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNNDk1LjkgMTY2LjZjMy4yIDguNyAuNSAxOC40LTYuNCAyNC42bC00My4zIDM5LjRjMS4xIDguMyAxLjcgMTYuOCAxLjcgMjUuNHMtLjYgMTcuMS0xLjcgMjUuNGw0My4zIDM5LjRjNi45IDYuMiA5LjYgMTUuOSA2LjQgMjQuNmMtNC40IDExLjktOS43IDIzLjMtMTUuOCAzNC4zbC00LjcgOC4xYy02LjYgMTEtMTQgMjEuNC0yMi4xIDMxLjJjLTUuOSA3LjItMTUuNyA5LjYtMjQuNSA2LjhsLTU1LjctMTcuN2MtMTMuNCAxMC4zLTI4LjIgMTguOS00NCAyNS40bC0xMi41IDU3LjFjLTIgOS4xLTkgMTYuMy0xOC4yIDE3LjhjLTEzLjggMi4zLTI4IDMuNS00Mi41IDMuNXMtMjguNy0xLjItNDIuNS0zLjVjLTkuMi0xLjUtMTYuMi04LjctMTguMi0xNy44bC0xMi41LTU3LjFjLTE1LjgtNi41LTMwLjYtMTUuMS00NC0yNS40TDgzLjEgNDI1LjljLTguOCAyLjgtMTguNiAuMy0yNC41LTYuOGMtOC4xLTkuOC0xNS41LTIwLjItMjIuMS0zMS4ybC00LjctOC4xYy02LjEtMTEtMTEuNC0yMi40LTE1LjgtMzQuM2MtMy4yLTguNy0uNS0xOC40IDYuNC0yNC42bDQzLjMtMzkuNEM2NC42IDI3My4xIDY0IDI2NC42IDY0IDI1NnMuNi0xNy4xIDEuNy0yNS40TDIyLjQgMTkxLjJjLTYuOS02LjItOS42LTE1LjktNi40LTI0LjZjNC40LTExLjkgOS43LTIzLjMgMTUuOC0zNC4zbDQuNy04LjFjNi42LTExIDE0LTIxLjQgMjIuMS0zMS4yYzUuOS03LjIgMTUuNy05LjYgMjQuNS02LjhsNTUuNyAxNy43YzEzLjQtMTAuMyAyOC4yLTE4LjkgNDQtMjUuNGwxMi41LTU3LjFjMi05LjEgOS0xNi4zIDE4LjItMTcuOEMyMjcuMyAxLjIgMjQxLjUgMCAyNTYgMHMyOC43IDEuMiA0Mi41IDMuNWM5LjIgMS41IDE2LjIgOC43IDE4LjIgMTcuOGwxMi41IDU3LjFjMTUuOCA2LjUgMzAuNiAxNS4xIDQ0IDI1LjRsNTUuNy0xNy43YzguOC0yLjggMTguNi0uMyAyNC41IDYuOGM4LjEgOS44IDE1LjUgMjAuMiAyMi4xIDMxLjJsNC43IDguMWM2LjEgMTEgMTEuNCAyMi40IDE1LjggMzQuM3pNMjU2IDMzNmE4MCA4MCAwIDEgMCAwLTE2MCA4MCA4MCAwIDEgMCAwIDE2MHoiLz48L3N2Zz4=",
+            "items": {
+                "_documentationLink": {
+                    "type": "staticLink",
+                    "href": "https://github.com/iobroker-community-adapters/ioBroker.shelly/tree/master/docs/en",
+                    "label": {
+                        "en": "Please read the documentation carefully before using this adapter",
+                        "de": "Bitte lies vor der Verwendung dieses Adapters die Dokumentation",
+                        "ru": "Пожалуйста, внимательно прочитайте документацию перед использованием этого адаптера",
+                        "pt": "Por favor, leia a documentação cuidadosamente antes de usar este adaptador",
+                        "nl": "Lees de documentatie zorgvuldig voor je deze adapter gebruikt",
+                        "fr": "Veuillez lire attentivement la documentation avant d'utiliser cet adaptateur",
+                        "it": "Si prega di leggere attentamente la documentazione prima di utilizzare questo adattatore",
+                        "es": "Por favor lea la documentación cuidadosamente antes de usar este adaptador",
+                        "pl": "Przeczytałem dokument przed użyciem tego adaptera",
+                        "uk": "Будь ласка, уважно прочитайте документацію перед використанням цього адаптера",
+                        "zh-cn": "请仔细阅读文件,然后利用这一适应者。"
+                    },
+                    "button": true,
+                    "variant": "contained",
+                    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNOTYgMEM0MyAwIDAgNDMgMCA5NlY0MTZjMCA1MyA0MyA5NiA5NiA5NkgzODRoMzJjMTcuNyAwIDMyLTE0LjMgMzItMzJzLTE0LjMtMzItMzItMzJWMzg0YzE3LjcgMCAzMi0xNC4zIDMyLTMyVjMyYzAtMTcuNy0xNC4zLTMyLTMyLTMySDM4NCA5NnptMCAzODRIMzUydjY0SDk2Yy0xNy43IDAtMzItMTQuMy0zMi0zMnMxNC4zLTMyIDMyLTMyem0zMi0yNDBjMC04LjggNy4yLTE2IDE2LTE2SDMzNmM4LjggMCAxNiA3LjIgMTYgMTZzLTcuMiAxNi0xNiAxNkgxNDRjLTguOCAwLTE2LTcuMi0xNi0xNnptMTYgNDhIMzM2YzguOCAwIDE2IDcuMiAxNiAxNnMtNy4yIDE2LTE2IDE2SDE0NGMtOC44IDAtMTYtNy4yLTE2LTE2czcuMi0xNiAxNi0xNnoiLz48L3N2Zz4=",
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12
+                },
+                "protocol": {
+                    "newLine": true,
+                    "type": "select",
+                    "options": [
+                        {
+                            "label": {
+                                "en": "MQTT (and HTTP)",
+                                "de": "MQTT (und HTTP)",
+                                "ru": "MQTT (и HTTP)",
+                                "pt": "MQTT (e HTTP)",
+                                "nl": "MQTT (en HTTP)",
+                                "fr": "MQTT (et HTTP)",
+                                "it": "MQTT (e HTTP)",
+                                "es": "MQTT (y HTTP)",
+                                "pl": "MQTT (i HTTP)",
+                                "uk": "MQTT (і HTTP)",
+                                "zh-cn": "MQTT (和 HTTP)"
+                            },
+                            "value": "mqtt"
+                        },
+                        {
+                            "label": {
+                                "en": "CoAP (and HTTP)",
+                                "de": "CoAP (und HTTP)",
+                                "ru": "CoAP (и HTTP)",
+                                "pt": "CoAP (e HTTP)",
+                                "nl": "CoAP (en HTTP)",
+                                "fr": "CoAP (et HTTP)",
+                                "it": "CoAP (e HTTP)",
+                                "es": "CoAP (y HTTP)",
+                                "pl": "CoAP (i HTTP)",
+                                "uk": "CoAP (і HTTP)",
+                                "zh-cn": "CoAP (和 HTTP)"
+                            },
+                            "value": "coap"
+                        }
+                    ],
+                    "sm": 12,
+                    "md": 8,
+                    "lg": 8,
+                    "label": "Shelly protocol",
+                    "help": "CoAP ist supported by Gen1 devices, MQTT is supported by all devices (Gen1 and Gen2)"
+                },
+                "_headerAuthentication": {
+                    "newLine": true,
+                    "type": "header",
+                    "size": 2,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "text": "User credentials for restricted login"
+                },
+                "httpusername": {
+                    "newLine": true,
+                    "type": "text",
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "HTTP Username",
+                    "help": "Will be used to authenticate against generation 1 devices"
+                },
+                "httppassword": {
+                    "type": "password",
+                    "repeat": false,
+                    "visible": true,
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "HTTP Password",
+                    "help": "You have to configure the same password on all devices"
+                },
+                "_documentationLinkRestrictedLogin": {
+                    "type": "staticLink",
+                    "href": "https://github.com/iobroker-community-adapters/ioBroker.shelly/blob/master/docs/en/restricted-login.md",
+                    "label": {
+                        "en": "How to protect your devices",
+                        "de": "Wie Sie Ihre Geräte absichern",
+                        "ru": "Как защитить ваши устройства",
+                        "pt": "Como proteger seus dispositivos",
+                        "nl": "Hoe je je apparatuur te beschermen",
+                        "fr": "Comment protéger vos appareils",
+                        "it": "Come proteggere i dispositivi",
+                        "es": "Cómo proteger sus dispositivos",
+                        "pl": "Jak chronić swoje urządzenia",
+                        "uk": "Як захистити ваші пристрої",
+                        "zh-cn": "如何保护你的装置"
+                    },
+                    "button": true,
+                    "variant": "contained",
+                    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNOTYgMEM0MyAwIDAgNDMgMCA5NlY0MTZjMCA1MyA0MyA5NiA5NiA5NkgzODRoMzJjMTcuNyAwIDMyLTE0LjMgMzItMzJzLTE0LjMtMzItMzItMzJWMzg0YzE3LjcgMCAzMi0xNC4zIDMyLTMyVjMyYzAtMTcuNy0xNC4zLTMyLTMyLTMySDM4NCA5NnptMCAzODRIMzUydjY0SDk2Yy0xNy43IDAtMzItMTQuMy0zMi0zMnMxNC4zLTMyIDMyLTMyem0zMi0yNDBjMC04LjggNy4yLTE2IDE2LTE2SDMzNmM4LjggMCAxNiA3LjIgMTYgMTZzLTcuMiAxNi0xNiAxNkgxNDRjLTguOCAwLTE2LTcuMi0xNi0xNnptMTYgNDhIMzM2YzguOCAwIDE2IDcuMiAxNiAxNnMtNy4yIDE2LTE2IDE2SDE0NGMtOC44IDAtMTYtNy4yLTE2LTE2czcuMi0xNiAxNi0xNnoiLz48L3N2Zz4=",
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4
+                },
+                "_headerCustomOptions": {
+                    "newLine": true,
+                    "type": "header",
+                    "size": 2,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "text": "Custom options"
+                },
+                "polltime": {
+                    "newLine": true,
+                    "type": "number",
+                    "min": 5,
+                    "max": 86400,
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "Poll time in seconds"
+                },
+                "autoupdate": {
+                    "newLine": true,
+                    "type": "checkbox",
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "Auto update of new firmware"
+                },
+                "updateUnchangedObjects": {
+                    "type": "checkbox",
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "Update objects even if there is no value change"
+                },
+                "_headerDebugging": {
+                    "newLine": true,
+                    "type": "header",
+                    "size": 3,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "text": "Debugging (expert options)"
+                },
+                "logDebugMessages": {
+                    "newLine": true,
+                    "type": "checkbox",
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "Log Debug Messages"
+                },
+                "saveHttpResponses": {
+                    "newLine": true,
+                    "type": "checkbox",
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "Save HTTP responses (for debugging)"
+                }
+            }
+        },
+        "_mqtt": {
+            "hidden": "data.protocol !== 'mqtt'",
+            "type": "panel",
+            "label": "MQTT settings",
+            "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2aWV3Qm94PSIwIDAgNDQ4IDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZyBpZD0iYmxhY2tfYmciIGRpc3BsYXk9Im5vbmUiIHRyYW5zZm9ybT0ibWF0cml4KDEsIDAsIDAsIDEsIDEsIDApIi8+CiAgPGcgaWQ9ImxvZ29zIiB0cmFuc2Zvcm09Im1hdHJpeCgyLjA0Njg0NiwgMCwgMCwgMi4wNDY4NDYsIC03OS4xMzYzMjIsIC0zNy41NTM3MykiIHN0eWxlPSIiPgogICAgPHBhdGggZD0iTTQ2LDY0LjJ2MzFjMC4yLDAsMC40LDAsMC42LDBjODQuNCwwLDE1My4yLDY4LDE1My45LDE1MS44aDMwLjFDMjI5LjgsMTQ2LjMsMTQ3LjQsNjQuNSw0Niw2NC4yeiIgZmlsbD0iI0ZGRkZGRiIgc3R5bGU9IiIvPgogICAgPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQ2LDEyOC4ydjMxYzAuMiwwLDAuNCwwLDAuNiwwYzQ4LjksMCw4OC44LDM5LjMsODkuNSw4Ny44aDMwLjFDMTY1LjUsMTgxLjYsMTExLjksMTI4LjUsNDYsMTI4LjJ6IiBzdHlsZT0iIi8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjQ4LjgsMTY2Ljh2LTYyLjVjLTcuNy0xMC41LTE3LjItMjIuNS0yNi43LTMxLjhjLTEwLjYtMTAuNS0yMy0yMC0zNS0yOC4zaC02Ni40IEMxNzguOSw2NS4xLDIyNS42LDExMCwyNDguOCwxNjYuOHoiIHN0eWxlPSIiLz4KICAgIDxwYXRoIGQ9Ik00Ni41LDE1OS4yYy0wLjIsMC0wLjQsMC0wLjYsMHY3Ny42YzAsNS42LDQuNiwxMC4yLDEwLjIsMTAuMkgxMzZDMTM1LjMsMTk4LjUsOTUuNSwxNTkuMiw0Ni41LDE1OS4yeiIgc3R5bGU9IiIvPgogICAgPHBhdGggZD0iTTQ2LjUsOTUuMmMtMC4yLDAtMC40LDAtMC42LDB2MzNjNjUuOSwwLjMsMTE5LjUsNTMuMywxMjAuMiwxMTguOGgzNC4yQzE5OS43LDE2My4yLDEzMSw5NS4yLDQ2LjUsOTUuMnoiIHN0eWxlPSIiLz4KICAgIDxwYXRoIGQ9Ik0yNDguOCwyMzYuOXYtNzAuMWMtMjMuMi01Ni44LTY5LjktMTAxLjctMTI4LTEyMi42SDU2LjFjLTUuNiwwLTEwLjIsNC42LTEwLjIsMTAuMnY5LjkgYzEwMS40LDAuMywxODMuOSw4MiwxODQuNSwxODIuOGg4LjJDMjQ0LjMsMjQ3LDI0OC44LDI0Mi41LDI0OC44LDIzNi45eiIgc3R5bGU9IiIvPgogICAgPHBhdGggZD0iTTIyMi4xLDcyLjVjOS40LDkuNCwxOSwyMS4zLDI2LjcsMzEuOHYtNTBjMC01LjYtNC41LTEwLjEtMTAuMS0xMC4xaC01MS41QzE5OS4yLDUyLjUsMjExLjYsNjIsMjIyLjEsNzIuNSB6IiBzdHlsZT0iIi8+CiAgPC9nPgo8L3N2Zz4=",
+            "items": {
+                "bind": {
+                    "newLine": true,
+                    "type": "ip",
+                    "listenOnAllPorts": true,
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "MQTT Listen IP"
+                },
+                "port": {
+                    "type": "number",
+                    "min": 1,
+                    "max": 65535,
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 2,
+                    "label": "Port"
+                },
+                "_headerAuthenticationMqtt": {
+                    "newLine": true,
+                    "type": "header",
+                    "size": 2,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "text": "MQTT Server options"
+                },
+                "mqttusername": {
+                    "newLine": true,
+                    "type": "text",
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "MQTT Username",
+                    "help": "Must be configured on all Shelly devices"
+                },
+                "mqttpassword": {
+                    "type": "password",
+                    "repeat": false,
+                    "visible": true,
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "MQTT Password",
+                    "help": "Must be configured on all Shelly devices"
+                },
+                "_documentationLinkRestrictedLogin": {
+                    "type": "staticLink",
+                    "href": "https://github.com/iobroker-community-adapters/ioBroker.shelly/blob/master/docs/en/protocol-mqtt.md",
+                    "label": {
+                        "en": "How to configure MQTT",
+                        "de": "So konfigurieren Sie MQTT",
+                        "ru": "Как настроить MQTT",
+                        "pt": "Como configurar o MQTT",
+                        "nl": "Hoe je MQTT te overtuigen",
+                        "fr": "Comment configurer MQTT",
+                        "it": "Come configurare MQTT",
+                        "es": "Cómo configurar MQTT",
+                        "pl": "Jak skonfigurować MQTT",
+                        "uk": "Як налаштувати MQTT",
+                        "zh-cn": "如何配置MQTT"
+                    },
+                    "button": true,
+                    "variant": "contained",
+                    "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NDggNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4wIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNOTYgMEM0MyAwIDAgNDMgMCA5NlY0MTZjMCA1MyA0MyA5NiA5NiA5NkgzODRoMzJjMTcuNyAwIDMyLTE0LjMgMzItMzJzLTE0LjMtMzItMzItMzJWMzg0YzE3LjcgMCAzMi0xNC4zIDMyLTMyVjMyYzAtMTcuNy0xNC4zLTMyLTMyLTMySDM4NCA5NnptMCAzODRIMzUydjY0SDk2Yy0xNy43IDAtMzItMTQuMy0zMi0zMnMxNC4zLTMyIDMyLTMyem0zMi0yNDBjMC04LjggNy4yLTE2IDE2LTE2SDMzNmM4LjggMCAxNiA3LjIgMTYgMTZzLTcuMiAxNi0xNiAxNkgxNDRjLTguOCAwLTE2LTcuMi0xNi0xNnptMTYgNDhIMzM2YzguOCAwIDE2IDcuMiAxNiAxNnMtNy4yIDE2LTE2IDE2SDE0NGMtOC44IDAtMTYtNy4yLTE2LTE2czcuMi0xNiAxNi0xNnoiLz48L3N2Zz4=",
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4
+                },
+                "_headerExpertMqtt": {
+                    "newLine": true,
+                    "type": "header",
+                    "size": 3,
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "text": "Expert options"
+                },
+                "qos": {
+                    "newLine": true,
+                    "type": "select",
+                    "options": [
+                        {
+                            "label": {
+                                "en": "0 - At most once",
+                                "de": "0 - Höchstens einmal",
+                                "ru": "0 - Не более одного раза",
+                                "pt": "0 - no máximo uma vez",
+                                "nl": "0 - Maximaal één keer",
+                                "fr": "0 - Au plus une fois",
+                                "it": "0 - Al massimo una volta",
+                                "es": "0: como máximo una vez",
+                                "pl": "0 - Co najwyżej raz",
+                                "uk": "0 - Принаймні",
+                                "zh-cn": "0 - 最多一次"
+                            },
+                            "value": 0
+                        },
+                        {
+                            "label": {
+                                "en": "1 - At least once",
+                                "de": "1 - Mindestens einmal",
+                                "ru": "1 - Хотя бы один раз",
+                                "pt": "1 - pelo menos uma vez",
+                                "nl": "1 - Minstens één keer",
+                                "fr": "1 - Au moins une fois",
+                                "it": "1 - Almeno una volta",
+                                "es": "1 - Al menos una vez",
+                                "pl": "1 - Przynajmniej raz",
+                                "uk": "1 - принаймні один",
+                                "zh-cn": "1 - 至少一次"
+                            },
+                            "value": 1
+                        },
+                        {
+                            "label": {
+                                "en": "2 - Exactly once",
+                                "de": "2 - Genau einmal",
+                                "ru": "2 - Ровно один раз",
+                                "pt": "2 - Exatamente uma vez",
+                                "nl": "2 - Precies één keer",
+                                "fr": "2 - Exactement une fois",
+                                "it": "2 - Esattamente una volta",
+                                "es": "2 - Exactamente una vez",
+                                "pl": "2 - Dokładnie raz",
+                                "uk": "2 - Точно один",
+                                "zh-cn": "2 - 恰好一次"
+                            },
+                            "value": 2
+                        }
+                    ],
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "Default QoS"
+                }
+            }
+        },
+        "_coap": {
+            "hidden": "data.protocol !== 'coap'",
+            "type": "panel",
+            "label": "CoAP settings",
+            "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIDYuNC4yIGJ5IEBmb250YXdlc29tZSAtIGh0dHBzOi8vZm9udGF3ZXNvbWUuY29tIExpY2Vuc2UgLSBodHRwczovL2ZvbnRhd2Vzb21lLmNvbS9saWNlbnNlIChDb21tZXJjaWFsIExpY2Vuc2UpIENvcHlyaWdodCAyMDIzIEZvbnRpY29ucywgSW5jLiAtLT48cGF0aCBkPSJNNTQuMiAyMDIuOUMxMjMuMiAxMzYuNyAyMTYuOCA5NiAzMjAgOTZzMTk2LjggNDAuNyAyNjUuOCAxMDYuOWMxMi44IDEyLjIgMzMgMTEuOCA0NS4yLS45czExLjgtMzMtLjktNDUuMkM1NDkuNyA3OS41IDQ0MC40IDMyIDMyMCAzMlM5MC4zIDc5LjUgOS44IDE1Ni43Qy0yLjkgMTY5LTMuMyAxODkuMiA4LjkgMjAyczMyLjUgMTMuMiA0NS4yIC45ek0zMjAgMjU2YzU2LjggMCAxMDguNiAyMS4xIDE0OC4yIDU2YzEzLjMgMTEuNyAzMy41IDEwLjQgNDUuMi0yLjhzMTAuNC0zMy41LTIuOC00NS4yQzQ1OS44IDIxOS4yIDM5MyAxOTIgMzIwIDE5MnMtMTM5LjggMjcuMi0xOTAuNSA3MmMtMTMuMyAxMS43LTE0LjUgMzEuOS0yLjggNDUuMnMzMS45IDE0LjUgNDUuMiAyLjhjMzkuNS0zNC45IDkxLjMtNTYgMTQ4LjItNTZ6bTY0IDE2MGE2NCA2NCAwIDEgMCAtMTI4IDAgNjQgNjQgMCAxIDAgMTI4IDB6Ii8+PC9zdmc+",
+            "items": {
+                "coapbind": {
+                    "newLine": true,
+                    "type": "ip",
+                    "listenOnAllPorts": true,
+                    "sm": 12,
+                    "md": 4,
+                    "lg": 4,
+                    "label": "COAP listen IP"
+                },
+                "blacklist": {
+                    "type": "table",
+                    "sm": 12,
+                    "md": 12,
+                    "lg": 12,
+                    "label": "Blacklist",
+                    "items": [
+                        {
+                            "type": "text",
+                            "attr": "id",
+                            "width": "100%",
+                            "title": {
+                                "en": "Device ID or IP address",
+                                "de": "Geräte-ID oder IP-Adresse",
+                                "ru": "ID устройства или IP адрес",
+                                "pt": "ID do dispositivo ou endereço IP",
+                                "nl": "ID of IP adres",
+                                "fr": "ID ou adresse IP",
+                                "it": "ID dispositivo o indirizzo IP",
+                                "es": "ID de dispositivo o dirección IP",
+                                "pl": "Device ID lub adres IP",
+                                "uk": "IP-адреса",
+                                "zh-cn": "Device ID或IP地址"
+                            },
+                            "filter": true,
+                            "sort": true,
+                            "default": ""
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
