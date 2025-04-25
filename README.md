@@ -71,6 +71,8 @@ execute
 
 NodeJS >= 20.x and js-controller >= 6 is required
 
+* (@klein0r) Admin 7.4.10 is required
+
 ## License
 
 The MIT License (MIT)

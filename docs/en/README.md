@@ -16,7 +16,7 @@ This is the English documentation - [🇩🇪 German version](../de/README.md)
 
 1. Node.js 20 (or later)
 2. js-controller 6.0.0 (or later)
-4. Admin Adapter 6.6.0 (or later)
+4. Admin Adapter 7.4.10 (or later)
 
 Questions? Check the [FAQ](faq.md) section first!
 

@@ -14,9 +14,9 @@ This is the German documentation - [🇺🇸 English version](../en/README.md)
 
 ## Anforderungen
 
-1. Node.js 20.0 (oder neuer)
+1. Node.js 20 (oder neuer)
 2. js-controller 6.0.0 (oder neuer)
-4. Admin Adapter 6.6.0 (oder neuer)
+4. Admin Adapter 7.4.10 (oder neuer)
 
 Fragen? Schaue zuerst in die [FAQ](faq.md)!
 
