@@ -38,8 +38,6 @@ class ShellyNG extends utils.Adapter {
             this.subscribeStates('*');
             // objectHelper.init(this);
 
-            const protocol = this.config.protocol || 'mqtt';
-
             await this.setOnlineFalse();
 
             // Start online check
@@ -47,21 +45,19 @@ class ShellyNG extends utils.Adapter {
 
             // Start MQTT server
             setImmediate(() => {
-                if (protocol === 'both' || protocol === 'mqtt') {
-                    this.log.info(
-                        `Starting in MQTT mode. Listening on ${this.config.bind}:${this.config.port} (QoS ${this.config.qos})`,
-                    );
+                this.log.info(
+                    `Starting in MQTT mode. Listening on ${this.config.bind}:${this.config.port} (QoS ${this.config.qos})`,
+                );
 
-                    if (!this.config.mqttusername || this.config.mqttusername.length === 0) {
-                        this.log.error('MQTT Username is missing!');
-                    }
-                    if (!this.config.mqttpassword || this.config.mqttpassword.length === 0) {
-                        this.log.error('MQTT Password is missing!');
-                    }
-
-                    this.serverMqtt = new MQTTServer(this, this.manager!);
-                    this.serverMqtt.listen();
+                if (!this.config.mqttusername || this.config.mqttusername.length === 0) {
+                    this.log.error('MQTT Username is missing!');
                 }
+                if (!this.config.mqttpassword || this.config.mqttpassword.length === 0) {
+                    this.log.error('MQTT Password is missing!');
+                }
+
+                this.serverMqtt = new MQTTServer(this, this.manager!);
+                this.serverMqtt.listen();
             });
 
             if (this.config.autoupdate) {

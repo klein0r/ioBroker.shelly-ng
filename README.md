@@ -53,14 +53,6 @@ Adapter version >= v6.6.0 required!
 
 **This adapter uses Sentry libraries to automatically report exceptions and code errors to the developers.** For more details and for information how to disable the error reporting see [Sentry-Plugin Documentation](https://github.com/ioBroker/plugin-sentry#plugin-sentry)! Sentry reporting is used starting with js-controller 3.0.
 
-## Troubleshooting after installation
-
-### TypeError: xmlserializer.Builder is not a constructor
-
-execute
-
-`cd /opt/iobroker/node_modules/iobroker.shelly npm install xml2js@0.4.23`
-
 ## Changelog
 
 <!--

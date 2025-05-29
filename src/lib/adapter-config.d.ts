@@ -4,14 +4,10 @@
 declare global {
     namespace ioBroker {
         interface AdapterConfig {
-            protocol: 'both' | 'mqtt' | 'coap';
-            httpusername: string;
-            httppassword: string;
             polltime: number;
             autoupdate: boolean;
             updateUnchangedObjects: boolean;
             logDebugMessages: boolean;
-            saveHttpResponses: boolean;
             bind: string;
             port: number;
             mqttusername: string;
@@ -22,4 +18,5 @@ declare global {
 }
 
 // this is required so the above AdapterConfig is found by TypeScript / type checking
-export {};
+export { };
+
