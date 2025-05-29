@@ -165,12 +165,7 @@
     "port": 1882,
     "mqttusername": "mqttuser",
     "mqttpassword": "mqttuser",
-    "qos": 0,
-    "blacklist": [
-      {
-        "id": "SHBDUO-1#123456789#2"
-      }
-    ]
+    "qos": 0
   },
   "objects": [],
   "instanceObjects": [
