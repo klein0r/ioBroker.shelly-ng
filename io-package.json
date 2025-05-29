@@ -60,7 +60,7 @@
     },
     "platform": "Javascript/Node.js",
     "mode": "daemon",
-    "icon": "shelly.png",
+    "icon": "shelly-ng.png",
     "enabled": false,
     "compact": true,
     "extIcon": "https://raw.githubusercontent.com/klein0r/ioBroker.shelly-ng/main/admin/shelly-ng.png",
