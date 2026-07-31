@@ -32,16 +32,6 @@ Integrate your Shelly next gen (Gen2+) devices into ioBroker via MQTT
 
 [🇩🇪 Dokumentation](./docs/de/README.md)
 
-### Bluetooth Low Energy (BLU)
-
-**Experimental** - see [documentation](https://github.com/klein0r/ioBroker.shelly-ng/blob/main/docs/en/ble-devices.md) for details (Shelly Scripting required)
-
-Adapter version >= v6.6.0 required!
-
-- BLU Button 1,
-- BLU Door/Window
-- BLU Motion
-
 ## NOT Supported devices
 
 - Shelly Plus Wall Dimmer US
@@ -61,9 +51,9 @@ Adapter version >= v6.6.0 required!
 -->
 ### **WORK IN PROGRESS**
 
-NodeJS >= 20.x and js-controller >= 6 is required
+NodeJS >= 22.x and js-controller >= 6 is required
 
-* (@klein0r) Admin 7.4.10 is required
+* (@klein0r) Admin 7.6.20 is required
 
 ## License
 
