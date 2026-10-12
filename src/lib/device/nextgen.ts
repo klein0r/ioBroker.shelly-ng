@@ -29,7 +29,12 @@ export class NextgenDevice extends BaseDevice {
             method: 'Shelly.GetComponents',
             params: { include: ['config', 'status'] },
         });
-        this.adapter.log.error(JSON.stringify(getComponentsResult));
+        this.adapter.log.error(JSON.stringify(getComponentsResult, null, 2));
+
+        for (const component of getComponentsResult.components) {
+            if (['ble'].includes(component.key)) {
+            }
+        }
 
         /*
         const listMethodsResult = await this.mqttClient.publishRpcMsg({ method: 'Shelly.ListMethods' });

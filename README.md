@@ -53,7 +53,7 @@ Integrate your Shelly next gen (Gen2+) devices into ioBroker via MQTT
 
 NodeJS >= 22.x and js-controller >= 6 is required
 
-* (@klein0r) Admin 7.6.20 is required
+* (@klein0r) Admin 7.8.23 is required
 
 ## License
 
